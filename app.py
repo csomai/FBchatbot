@@ -43,9 +43,9 @@ def webhook():
                     #send_ message(sender_id, "szeretlek")
                     #else:
                     send_message(sender_id, "Szia Cuki, remelem jobban vagy! Kimentem bicozni.")
-                    send_message(sender_id, "Nem akartam hangoskodni és levegore is volt szuksegem.")
-                    send_message(sender_id, "A gepet megcsinaltam a kod a regi, sok minden nincs rajt.")
-                    send_message(sender_id, "Nagyon szeretlek! Sietek vissza! NE MOSOGASS!!")
+                    #send_message(sender_id, "Nem akartam hangoskodni és levegore is volt szuksegem.")
+                    #send_message(sender_id, "A gepet megcsinaltam a kod a regi, sok minden nincs rajt.")
+                    #send_message(sender_id, "Nagyon szeretlek! Sietek vissza! NE MOSOGASS!!")
 
                 if messaging_event.get("delivery"):  # delivery confirmation
                     pass
