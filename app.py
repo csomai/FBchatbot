@@ -38,14 +38,8 @@ def webhook():
                     sender_id = messaging_event["sender"]["id"]        # the facebook ID of the person sending you the message
                     recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
                     message_text = messaging_event["message"]["text"]  # the message's text
-                    
-                    #if sender_id == 'krisztian.csomai.9':
-                    #send_ message(sender_id, "szeretlek")
-                    #else:
-                     send_message(sender_id, "szia cuki, jobban vagy?")
-                    #send_message(sender_id, "Nem akartam hangoskodni és levegore is volt szuksegem.")
-                    #send_message(sender_id, "A gepet megcsinaltam a kod a regi, sok minden nincs rajt.")
-                    #send_message(sender_id, "Nagyon szeretlek! Sietek vissza! NE MOSOGASS!!")
+
+                    send_message(sender_id, "bobburgerfalodája kell lelle")
 
                 if messaging_event.get("delivery"):  # delivery confirmation
                     pass
