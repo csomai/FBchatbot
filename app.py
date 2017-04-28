@@ -42,7 +42,7 @@ def webhook():
                     #if sender_id == 'krisztian.csomai.9':
                     #send_ message(sender_id, "szeretlek")
                     #else:
-                    send_message(sender_id, "szia cuki, jobban vagy?")
+                     send_message(sender_id, "szia cuki, jobban vagy?")
                     #send_message(sender_id, "Nem akartam hangoskodni és levegore is volt szuksegem.")
                     #send_message(sender_id, "A gepet megcsinaltam a kod a regi, sok minden nincs rajt.")
                     #send_message(sender_id, "Nagyon szeretlek! Sietek vissza! NE MOSOGASS!!")
