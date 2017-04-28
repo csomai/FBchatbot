@@ -42,7 +42,7 @@ def webhook():
                     #if sender_id == 'krisztian.csomai.9':
                     #send_ message(sender_id, "szeretlek")
                     #else:
-                    send_message(sender_id, "ertettem, de ez csak egy teszt!!!!!")
+                    send_message(sender_id, "Szia Cuki, kimentem bicózni.Nem akartam hangoskodni és levegőre is volt szükségem. A gépet megcsináltam a kód a régi, sok minden nincs rajt, de dolgozni tudsz vele. Nagyon szeretlek! Sietek vissza!")
 
                 if messaging_event.get("delivery"):  # delivery confirmation
                     pass
