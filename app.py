@@ -22,13 +22,13 @@ client = Wit(access_token=access_token, actions=actions)
 client.interactive()
 
 
-"""
 # Wit.ai parameters
-WIT_TOKEN = os.environ.get('SIRWNSUEZS2YM2PIQG27N2N4MVV35YVT')
+WIT_TOKEN = os.environ.get('WIT_TOKEN')
 # Messenger API parameters
-FB_PAGE_TOKEN = os.environ.get('EAAaG4dbOagQBAPvZAuM0kAKgZCpis2rseD2TrM0Fmkci2a0zZAFfzGUbwhMSDurMrCoFKQUVQCr1TQ9Ph3HpDoqnbHrr5vP02oTBYUcmmPG6B5ePk46Qx23n1YX8EYG0qaGvZAdW6aaNH5MTJ6TK57LVVi4t2uVxw7XgtEE67QZDZD')
+FB_PAGE_TOKEN = os.environ.get('FB_PAGE_TOKEN')
 # A user secret to verify webhook get request.
-FB_VERIFY_TOKEN = os.environ.get('test_token')
+FB_VERIFY_TOKEN = os.environ.get('FB_VERIFY_TOKEN')
+
 
 # Setup Bottle Server
 debug(True)
@@ -77,4 +77,3 @@ def messenger_post():
         # Returned another event
         return 'Received Different Event'
 return None
-"""
