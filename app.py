@@ -1,5 +1,5 @@
 import sys
-from wit import Wit
+import wit
 
 if len(sys.argv) != 2:
     print('usage: python ' + sys.argv[0] + 'SIRWNSUEZS2YM2PIQG27N2N4MVV35YVT')
@@ -8,6 +8,7 @@ access_token = 'SIRWNSUEZS2YM2PIQG27N2N4MVV35YVT'
 
 # Quickstart example
 # See https://wit.ai/ar7hur/Quickstart
+
 
 def first_entity_value(entities, entity):
     if entity not in entities:
