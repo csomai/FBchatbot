@@ -4,6 +4,25 @@ from sys import argv
 from wit import Wit
 from bottle import Bottle, request, debug
 
+import sys
+from wit import Wit
+
+if len(sys.argv) != 2:
+    print('usage: python ' + sys.argv[0] + 'SIRWNSUEZS2YM2PIQG27N2N4MVV35YVT')
+    exit(1)
+access_token = 'SIRWNSUEZS2YM2PIQG27N2N4MVV35YVT'
+def send(request, response):
+    print(response['text'])
+
+actions = {
+    'send': send,
+}
+
+client = Wit(access_token=access_token, actions=actions)
+client.interactive()
+
+
+"""
 # Wit.ai parameters
 WIT_TOKEN = os.environ.get('SIRWNSUEZS2YM2PIQG27N2N4MVV35YVT')
 # Messenger API parameters
@@ -58,3 +77,4 @@ def messenger_post():
         # Returned another event
         return 'Received Different Event'
 return None
+"""
