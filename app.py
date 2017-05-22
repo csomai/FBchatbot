@@ -8,33 +8,14 @@ import sys
 from wit import Wit
 
 # Wit.ai parameters
-WIT_TOKEN = os.environ.get('WIT_TOKEN')
+WIT_TOKEN = os.environ.get('SIRWNSUEZS2YM2PIQG27N2N4MVV35YVT')
 # Messenger API parameters
-FB_PAGE_TOKEN = os.environ.get('FB_PAGE_TOKEN')
-# A user secret to verify webhook get request.
-FB_VERIFY_TOKEN = os.environ.get('FB_VERIFY_TOKEN')
+FB_PAGE_TOKEN = os.environ.get('EAAaG4dbOagQBAPTwYpY6U1wTo31cZBSK1ZBuDn53MQlGZAJVwE8mRd0jx9RlszkQpZA300gcYk2d8JQNerofvlZAD79TtKOMNyjx0c5SQjcHryUDlKyls5goqXsGVSeXyh0tZCnEudubTjuo5JiR3FUxMZBuaZC73nZClDi1E9cZAFtgZDZD')
 
 
 # Setup Bottle Server
 debug(True)
 app = Bottle()
-
-
-# Facebook Messenger GET Webhook
-@app.get('/webhook')
-def messenger_webhook():
-    """
-    A webhook to return a challenge
-    """
-    verify_token = request.query.get('hub.verify_token')
-    # check whether the verify tokens match
-    if verify_token == FB_VERIFY_TOKEN:
-        # respond with the challenge to confirm
-        challenge = request.query.get('hub.challenge')
-        return challenge
-    else:
-        return 'Invalid Request or Verification Token'
-
 
 # Facebook Messenger POST Webhook
 @app.post('/webhook')
