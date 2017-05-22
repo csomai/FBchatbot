@@ -14,5 +14,4 @@ actions = {
 }
 
 client = Wit(access_token=access_token, actions=actions)
-
 client.interactive()
